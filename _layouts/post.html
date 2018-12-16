@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-<article class="box post post-excerpt">
+<div class="inner">
     <header>
-        <h2><a href="#">{{ page.title }}</a></h2>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.date | date_to_string }}</p>
     </header>
-    <div class="info">
-        <span class="date">{{ page.date | date_to_string }}</span>
-    </div>
-    {{ content }}
-</article>
+    <section>
+        <article>
+            {{ content }}
+        </article>
+    </section>
+</div>
