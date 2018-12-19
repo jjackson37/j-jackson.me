@@ -1,6 +1,8 @@
 - name: Home
   link: /
 - name: Archives
-  link: /archives.html
+  link: /archives
 - name: About Me
-  link: /about.html
+  link: /about-me
+- name: Categories / Projects
+  link: /category

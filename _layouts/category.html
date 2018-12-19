@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="inner">
+    <header>
+        <h1>{{ page.name }}</h1>
+        <p>{{ page.description }}</p>
+    </header>
+    <section class="tiles">
+        {% assign sorted = site.categories[page.tag] | sort: 'date' %}
+        {% for post in sorted %}
+        <article class="style1">
+            <span class="image">
+                <img src="/images/pic01.jpg" alt="" />
+            </span>
+            <a href="{{ post.url }}">
+                <h2>{{ post.title }}</h2>
+                <div class="content">
+                    {{ post.excerpt }}
+                </div>
+            </a>
+        </article>
+        {% endfor %}
+    </section>
+</div>

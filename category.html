@@ -1,0 +1,27 @@
+---
+layout: default
+title: Categories / Projects
+permalink: "/Category"
+---
+
+<div class="inner">
+    <header>
+        <h1>Categories / Projects</h1>
+        <p>Posts grouped by categories / projects.</p>
+    </header>
+    <section class="tiles">
+        {% for category in site.category %}
+        <article class="style1">
+            <span class="image">
+                <img src="/images/pic01.jpg" alt="" />
+            </span>
+            <a href="{{ category.permalink }}">
+                <h2>{{ category.name }}</h2>
+                <div class="content">
+                    {{ category.description }}
+                </div>
+            </a>
+        </article>
+        {% endfor %}
+    </section>
+</div>
