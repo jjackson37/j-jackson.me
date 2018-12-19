@@ -2,7 +2,7 @@
 layout: post
 title: "Categories"
 categories: Jekyll-Site
-permalink: "/category/Jekyll-Site/categories/"
+permalink: "/category/jekyll-site/categories/"
 ---
 Hi, welcome to my first actual post about a project! This is the first post of a series about the development of this website, this post will be about the implmentation of categories into the site. I wanted categories in my site to make it easier to keep track of posts related to certain projects.
 
